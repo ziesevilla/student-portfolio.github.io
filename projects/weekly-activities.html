@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+       
+        tr {
+            height: 50px;
+        }
+
+
+        td:first-child {
+            color: rgb(89, 88, 88);
+        }
+
+
+        th {
+            width: 100px;
+        }
+
+
+        .class {
+            width: 100%;
+            border-collapse: collapse;
+            overflow-x: auto;
+            height: 100vh;
+        }
+
+
+        .title {
+            font-weight: bold;
+            display: block;
+            font-size: 30px;
+        }
+
+
+        .days {
+            background-color: rgb(17, 128, 17);
+            color: white;
+        }
+
+
+        th, td {
+            border: 1px solid rgb(176, 175, 175);
+            padding: 8px;
+            text-align: center;
+        }
+
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+
+        .red {
+            background-color: red;
+        }
+
+
+        .orange {
+            background-color: orange;
+        }
+
+
+        .blue {
+            background-color: blue;
+        }
+
+
+        .gray {
+            background-color: gray;
+        }
+
+
+        .green {
+            background-color: green;
+        }
+
+
+        .brown {
+            background-color: rgb(129, 32, 32);
+        }
+
+
+        .purple {
+            background-color: purple;
+        }
+
+
+        .pink {
+            background-color: rgb(179, 37, 110);
+        }
+
+
+        .olive {
+            background-color: olive;
+        }
+
+
+        .other {
+            background-color: rgb(232, 183, 93);
+        }
+
+
+        .course {
+            color: white;
+            text-align: center;
+        }
+
+
+        .lunch {
+            background-color: aqua;
+            color: black;
+            border: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .class {
+                font-size: 12px;
+            }
+
+
+            td, th {
+                padding: 6px;
+            }
+
+
+            .title {
+                font-size: 16px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .class {
+                font-size: 10px;
+            }
+
+
+            td, th {
+                padding: 4px;
+            }
+
+
+            .title {
+                font-size: 14px;
+            }
+
+
+            th {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Schedule: BSCS - 1CS-A</h1>
+    <table class="class">
+        <thead>
+            <tr>
+                <th class="days">TIME</th>
+                <th class="days">Sunday</th>
+                <th class="days">Monday</th>
+                <th class="days">Tuesday</th>
+                <th class="days">Wednesday</th>
+                <th class="days">Thursday</th>
+                <th class="days">Friday</th>
+                <th class="days">Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7:00 AM - 7:30 AM</td>
+                <td></td>
+                <td rowspan="6" class="red course">Class #2<br><span class="title">CCS103</span><br><em>J. Claudel</em><br>(Laboratory)<br>COMLAB 1</td>
+                <td rowspan="3" class="green course">Class #569<br><span class="title">HIS101</span><br><em>P. Saquing</em><br>(Lecture)<br>L4</td>
+                <td rowspan="4" class="red course">Class #2<br><span class="title">CCS103</span><br><em>J. Claudel</em><br>(Laboratory)<br>COMLAB 1</td>
+                <td rowspan="4" class="other course"><span class="title">Read a Book</span></td>
+                <td rowspan="3" class="green course">Class #569<br><span class="title">HIS101</span><br><em>P. Saquing</em><br>(Lecture)<br>L4</td>
+                <td rowspan="6" class="olive course">Class #569<br><span class="title">NSTP2</span><br><em>B. Catindig</em><br>(Lecture)<br>L4</td>
+            </tr>
+            <tr>
+                <td>7:30 AM - 8:00 AM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8:00 AM - 8:30 AM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8:30 AM - 9:00 AM</td>
+                <td></td>
+                <td rowspan="7" class="other course"><span class="title">ACSS Duty</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9:00 AM - 9:30 AM</td>
+                <td></td>
+                <td rowspan="6" class="other course"><span class="title">Write Notes at the Library</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9:30 AM - 10:00 AM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 10:30 AM</td>
+                <td></td>
+                <td rowspan="3" class="orange course">Class #570<br><span class="title">HMN101</span><br><em>R. Ysulan</em><br>(Lecture)<br>L5</td>
+                <td rowspan="3" class="orange course">Class #570<br><span class="title">HMN101</span><br><em>R. Ysulan</em><br>(Lecture)<br>L5</td>
+                <td rowspan="4" class="other course"><span class="title">Org Works (AWS, ACSS, JBECP)</span></td>
+                <td rowspan="4" class="pink course">Class #39<br><span class="title">CCS114</span><br><em>C. Morano</em><br>(Lecture)<br>COMLAB 2</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 11:00 AM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 11:30 AM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:30 AM - 12:00 PM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 12:30 PM</td>
+                <td colspan="7" rowspan="2" class="lunch course"><span class="title">Lunch Time</span></td>
+               
+            </tr>
+            <tr>
+                <td>12:30 PM - 1:00 PM</td>
+               
+            </tr>
+            <tr>
+                <td>1:00 PM - 1:30 PM</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2" class="other course"><span class="title">ACSS Duty</span></td>
+                <td rowspan="2" class="other course"><span class="title">Write Notes at the Library</span></td>
+                <td rowspan="6" class="other course"><span class="title">Org Works (AWS, ACSS, JBECP)</span></td>
+                <td rowspan="6" class="other course"><span class="title">Org Works (AWS, ACSS, JBECP)</span></td>
+                <td rowspan="6" class="pink course">Class #39<br><span class="title">CCS114</span><br><em>C. Morano</em><br>(Lecture)<br>COMLAB 2</td>
+            </tr>
+            <tr>
+                <td>1:30 PM - 2:00 PM</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 2:30 PM</td>
+                <td></td>
+                <td rowspan="4" class="blue course">Class #38<br><span class="title">CCS105</span><br><em>F. Huerte</em><br>(Lecture)<br>Network Room</td>
+                <td rowspan="6" class="blue course">Class #38<br><span class="title">CCS105</span><br><em>F. Huerte</em><br>(Lecture)<br>Network Room</td>
+                <td rowspan="4" class="brown course">Class #572<br><span class="title">PED102</span><br><em>M. Elbo</em><br>(Lecture)<br>GYM1</td>
+            </tr>
+            <tr>
+                <td>2:30 PM - 3:00 PM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 3:30 PM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3:30 PM - 4:00 PM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4:00 PM - 4:30 PM</td>
+                <td></td>
+                <td rowspan="3" class="gray course">Class #571<br><span class="title">COM101</span><br><em>J. Prado</em><br>(Lecture)<br>L4</td>
+                <td rowspan="3" class="purple course">Class #573<br><span class="title">PHD102</span><br><em>R. Balidio</em><br>(Lecture)<br>GYM1</td>
+                <td rowspan="3" class="gray course">Class #571<br><span class="title">COM101</span><br><em>J. Prado</em><br>(Lecture)<br>L4</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4:30 PM - 5:00 PM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5:00 PM - 5:30 PM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5:30 PM - 6:00 PM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
